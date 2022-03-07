@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset= "utf-8">
+    <title>JavaScript Exercício</title>
+    <script>
+        var nome = prompt("Nome do aluno:");
+        var nota1 = parseFloat(prompt("Informe a primeira nota da disciplina:"));
+        var nota2 = parseFloat(prompt("Informe a segunda nota da disciplina:"));
+        var nota3 = parseFloat(prompt("Informe a terceira nota da disciplina:"));
+        var notatotal = nota1 + nota2 + nota3;
+        var media = notatotal/3;
+        
+        if (media>=7)
+        window.alert (`O aluno ${nome} foi APROVADO com a média de: ${media} pontos`);
+        else if (media<7)
+        window.alert (`O aluno${nome}foi REPROVADO com a média de:${media}pontos`);
+    
+        
+    </script>
+</head>
+
+<body>
+    <h1>Exercício 04</h1>
+</body>
+
+</html>
