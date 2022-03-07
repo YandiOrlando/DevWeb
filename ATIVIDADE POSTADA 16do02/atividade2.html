@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+        <script>
+            //variaveis
+            var numeros= [];
+            var pares= [];
+            var impares= [];
+            var msg= "";
+            var x = 0;
+            function verificador(numeros)
+            {
+                numeros.forEach(function(elemento){
+                    if(elemento % 2 == 0)//pares
+                    {
+                        pares.push(elemento);
+                    }
+                    else if(elemento%2 != 0)//impares
+                    {
+                        impares.push(elemento);
+                    }
+                });
+                pares.forEach(elemento =>{
+                    alert("Pares " + elemento)
+                })
+                impares.forEach(elemento =>{
+                    alert("Impares " + elemento)
+                })
+                
+            }
+            //loop
+            do
+            {
+                numeros.push(parseFloat(prompt("informe um numero")));
+               
+                x++
+            }while(x < 10)
+            
+            alert(verificador(numeros));
+        </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+        <script>
+            //variaveis
+            var avaliacao= [];
+            var idade =[];
+            var  otimo = 0;
+            var q_otimo=0;
+            var regular=0;
+            var boa=0;
+            var media= 0;
+            var msg= "";
+            var x = 0;
+            function cinema(avaliacao,idade)
+            {
+                avaliacao.forEach(function(elemento,indice){
+                    if(elemento == 3)//otimo
+                    {
+                        otimo = otimo + idade[indice];
+                        q_otimo ++;
+                    }
+                    else if(elemento == 2)//bom
+                    {
+                        boa++;
+                    }
+                    else//regular
+                    {
+                        regular++;
+                    }
+                });
+                //calculo da media
+                media = otimo/q_otimo;
+                msg=" média das idades das pessoas que responderam ótimo= "+media +
+                "a quantidade de pessoas que responderam regular= "+ regular +
+                "a porcentagem de pessoas que responderam bom entre todos os espectadores analisados= "+ boa;
+                return(msg)
+            }
+            //loop
+            do
+            {
+                avaliacao.push(parseFloat(prompt("sua opinião em relação ao filme: ótimo - 3, bom - 2, regular -1.")));
+                idade.push(parseFloat(prompt("sua idade ")));
+                x++
+            }while(x < 10)
+            var resposta = cinema(avaliacao,idade);
+            alert(resposta);
+        </script>
+</body>
+</html>
