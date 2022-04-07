@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aplicação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+            <title>Evento 4</title>
+        </head>
+        <body>
+        
+            <p id="paragrafo">
+                Era uma vez um Paladino que nunca se mostrou ser forte mas um dia ele conseguiu matar um dragão fim
+            </p>
+            <button>Ocultar/Mostrar</button>
+            <script>
+        
+            var esconde = document.querySelectorAll('button')[0];
+        
+            esconde.onclick = function(){
+        
+                var element = document.getElementById("paragrafo")
+                if(element.style.color == 'black'){
+                element.style.color = 'transparent'
+               }else{
+                element.style.color = 'black'
+               }
+            }
+            <script src="js4.js"></script>
+        </body>
+</html>
