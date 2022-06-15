@@ -1,13 +1,13 @@
 {
   "name": "trabalhopratico",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cidades Estados do Brasil em JSON ====================",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "YANDI ORLANDO SANTOS RIVERO 51",
+  "author": "",
   "license": "ISC",
-  "type":"module"
+  "keywords": [],
+  "type": "module"
 }
