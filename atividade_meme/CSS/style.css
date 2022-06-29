@@ -1,0 +1,31 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(https://img.ibxk.com.br/2011/11/gifs/tumblr_lkl9dtHAo81qzt4vjo1_500.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .caixinhadomeme {
+  display: flex;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 70px;
+  background-color: rgb(44, 44, 44);
+  color: rgb(207, 207, 207);
+  transform: scale(0.9);
+}
+main .caixinhadomeme img {
+  width: 60%;
+  margin-top: 45px;
+}
+main .caixinhadomeme a {
+  color: aliceblue;
+  font-size: 25px;
+  margin-top: 15px;
+  text-decoration: none;
+  
+}
+
